@@ -16,6 +16,10 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4c6ab56c32ea13278c22f96dcd63399f
 URL:		http://search.cpan.org/dist/Net-IDN-Encode/
+%if %{with tests}
+BuildRequires:	perl-Net-IDN-Nameprep >= 0.02
+BuildRequires:	perl-IDNA-Punycode >= 0.02
+%endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
