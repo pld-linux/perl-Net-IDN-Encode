@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Net
-%define	pnam	IDN-Encode
+%define		pdir	Net
+%define		pnam	IDN-Encode
 Summary:	Encoding/decoding of Internationalized Domain Names (IDNs)
 Summary(pl):	Kodowanie/dekodowanie miêdzynarodowych nazw domenowych (IDN)
 Name:		perl-Net-IDN-Encode
