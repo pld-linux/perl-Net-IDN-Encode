@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Net
 %define	pnam	IDN-Encode
-Summary:	Encoding/Decoding of Internationalized Domain Names (IDNs
+Summary:	Encoding/decoding of Internationalized Domain Names (IDNs)
 Summary(pl):	Kodowanie/dekodowanie miêdzynarodowych nazw domenowych (IDN)
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.01
