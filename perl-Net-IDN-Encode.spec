@@ -8,13 +8,13 @@
 Summary:	Encoding/decoding of Internationalized Domain Names (IDNs)
 Summary(pl):	Kodowanie/dekodowanie miêdzynarodowych nazw domenowych (IDN)
 Name:		perl-Net-IDN-Encode
-Version:	0.01
+Version:	0.02
 Release:	1
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	4c6ab56c32ea13278c22f96dcd63399f
+# Source0-md5:	3e5925e8dc04a53fd68972d14ce3d5a8
 URL:		http://search.cpan.org/dist/Net-IDN-Encode/
 %if %{with tests}
 BuildRequires:	perl-Net-IDN-Nameprep >= 0.02
