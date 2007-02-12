@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	IDN-Encode
 Summary:	Encoding/decoding of Internationalized Domain Names (IDNs)
-Summary(pl):	Kodowanie/dekodowanie miêdzynarodowych nazw domenowych (IDN)
+Summary(pl.UTF-8):   Kodowanie/dekodowanie miÄ™dzynarodowych nazw domenowych (IDN)
 Name:		perl-Net-IDN-Encode
 Version:	0.02
 Release:	1
@@ -31,9 +31,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The "Net::IDN::Encode" module provides an easy-to-use interface for
 Internationalized Domain Names (IDNs).
 
-%description -l pl
-Modu³ Net::IDN::Encode dostarcza ³atwego w u¿yciu interfejsu do
-obs³ugi Miêdzynarodowych Nazw Domenowych (Internationalized Domain
+%description -l pl.UTF-8
+ModuÅ‚ Net::IDN::Encode dostarcza Å‚atwego w uÅ¼yciu interfejsu do
+obsÅ‚ugi MiÄ™dzynarodowych Nazw Domenowych (Internationalized Domain
 Names [IDNs]).
 
 %prep
