@@ -6,7 +6,7 @@
 %define		pdir	Net
 %define		pnam	IDN-Encode
 Summary:	Encoding/decoding of Internationalized Domain Names (IDNs)
-Summary(pl.UTF-8):   Kodowanie/dekodowanie międzynarodowych nazw domenowych (IDN)
+Summary(pl.UTF-8):	Kodowanie/dekodowanie międzynarodowych nazw domenowych (IDN)
 Name:		perl-Net-IDN-Encode
 Version:	0.02
 Release:	1
