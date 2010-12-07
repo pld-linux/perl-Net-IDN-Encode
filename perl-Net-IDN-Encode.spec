@@ -8,24 +8,24 @@
 Summary:	Encoding/decoding of Internationalized Domain Names (IDNs)
 Summary(pl.UTF-8):	Kodowanie/dekodowanie międzynarodowych nazw domenowych (IDN)
 Name:		perl-Net-IDN-Encode
-Version:	0.02
-Release:	2
+Version:	1.100
+Release:	1
 # "same as perl"
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	3e5925e8dc04a53fd68972d14ce3d5a8
+Source0:	http://www.cpan.org/modules/by-module/Net/CFAERBER/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	9a90b0d9bcc7886c0f7214df94bfa62f
 URL:		http://search.cpan.org/dist/Net-IDN-Encode/
 %if %{with tests}
-BuildRequires:	perl-Net-IDN-Nameprep >= 0.02
-BuildRequires:	perl-IDNA-Punycode >= 0.02
+BuildRequires:	perl-ExtUtils-CBuilder
+BuildRequires:	perl-Net-IDN-Nameprep >= 1.100
+BuildRequires:	perl-Test-NoWarnings
+BuildRequires:	perl-Test-Simple
 %endif
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noautoreq	'perl(v5.6.0)'
 
 %description
 The "Net::IDN::Encode" module provides an easy-to-use interface for
@@ -34,7 +34,7 @@ Internationalized Domain Names (IDNs).
 %description -l pl.UTF-8
 Moduł Net::IDN::Encode dostarcza łatwego w użyciu interfejsu do
 obsługi Międzynarodowych Nazw Domenowych (Internationalized Domain
-Names [IDNs]).
+Names - IDN).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -60,4 +60,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/Net/IDN/Encode.pm
-%{_mandir}/man3/*
+%{perl_vendorlib}/Net/IDN/Punycode.pm
+%{perl_vendorlib}/Net/IDN/Punycode.xs
+%{perl_vendorlib}/Net/IDN/Punycode
+%{_mandir}/man3/Net::IDN::Encode.3pm*
+%{_mandir}/man3/Net::IDN::Punycode*.3pm*
